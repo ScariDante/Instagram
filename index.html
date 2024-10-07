@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Sign Up</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 10px; /* Added padding for smaller screens */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px; /* Maximum width for larger screens */
+            margin: auto; /* Center the container */
+        }
+
+        .form-box {
+            background-color: white;
+            padding: 20px; /* Adjusted padding for smaller screens */
+            border: 1px solid #dbdbdb;
+            text-align: center;
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        .form-box h1 {
+            font-family: 'Billabong', sans-serif;
+            color: #262626;
+            font-size: 40px; /* Adjusted font size */
+            margin: 20px 0;
+        }
+
+        .form-box p {
+            color: #8e8e8e;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            font-size: 14px; /* Adjusted font size */
+        }
+
+        button {
+            width: 100%;
+            background-color: #0095f6;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px; /* Adjusted font size */
+        }
+
+        button:hover {
+            background-color: #007bb5;
+        }
+
+        a {
+            color: #0095f6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            margin: 20px 0;
+        }
+
+        .logo {
+            width: 80px; /* Adjusted width for logo */
+            margin-bottom: 20px; /* Space between logo and title */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" class="logo">
+            <h1>Instagram</h1>
+            <p>Sign up to see photos and videos from your friends.</p>
+            <form action="/submit" method="post">
+                <input type="email" placeholder="Email" required><br>
+                <input type="text" placeholder="Full Name" required><br>
+                <input type="text" placeholder="Username" required><br>
+                <input type="password" placeholder="Password" required><br>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>By signing up, you agree to our <a href="#">Terms</a>, <a href="#">Data Policy</a> and <a href="#">Cookies Policy</a>.</p>
+            <hr>
+            <p>Have an account? <a href="http://127.0.0.1:5000">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>
